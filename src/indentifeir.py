@@ -28,22 +28,11 @@ def first_caracter(string):
 
 			
 
-def identifeir(string):
-	global caracter 
-	list = []
-	if size == True:
-		list.append(1)
-	caracter = caracter(string)
-	special = caracter_Special(string,caracter)
-	if special == True:
-		list.append(1)
-	fc = first_caracter(string)
-	if fc == True:
-		list.append(1)
-
-	if len(list) == 3:
-		return "válido"
+def identificar(string):
+	if  (size(string) == True) and (caracter_Special(string,caracter(string))== True) and (first_caracter(string) == True):
+		return True
 	else:
-		return "inválido"
+		return False
+
 	
 	
